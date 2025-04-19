@@ -1,0 +1,63 @@
+.informacao{
+  margin: 0 1.562rem;
+  position: absolute;
+  top: 87rem;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.card{
+  padding: 0.56rem;
+  margin:2.18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.cor{ 
+  background-color: var(--cor2);
+  background-size: 6.25rem;
+  border-radius: 50%;
+}
+.icone{
+  width: 5rem; 
+}
+.informacao__titulo{
+  font-family: var(--font-title);
+  font-size: 2.56rem;
+  color: var(--cor1);
+  text-align: center;
+}
+.informacao__paragrafo{
+  font-family: var(--font-text);
+  font-size: 1.125rem;
+  line-height: 160%;
+  text-align: center;
+}
+
+@media screen and (min-width: 540px) {
+  .informacao{
+    margin:  0 3rem;
+    top: 92rem;
+  }
+  .card{
+    margin: 0;
+  }
+
+}
+
+@media screen and (min-width: 720px) {
+  .informacao{
+    top: 60rem;
+  }
+}
+
+@media screen and (min-width: 940px) {
+
+  .informacao {
+    flex-direction: row;
+    top: 68rem;
+
+  }
+}

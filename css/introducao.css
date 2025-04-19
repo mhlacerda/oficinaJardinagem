@@ -34,9 +34,9 @@
 }
 
 .texto__container{
-  background-color:  rgba(192, 204, 193, 0.5); /*variavel cor:3 com 50% de transparencia*/
+  background-color: var(--back-texto); /*variavel cor:3 com 50% de transparencia*/
   width: 100%;
-  height: 43rem;
+  height: 49rem;
   position: relative;
   top: -10rem;
   z-index: -1;
@@ -84,21 +84,24 @@ top: 14rem;
 .credito{
   padding: 1.25rem 0;
   position: relative;
-  top: -9rem;
+  top: -10rem;
 }
 
 @media screen and (min-width: 540px) {
+  .introducao{
+    margin:  0 3rem;
+  }
   .container__imagens{
     width: 23.625rem;
   }
   .texto__container{
     width: 22.25rem;
     margin-left: 11.5rem;
-    height: 39.75rem;
+    height: 50rem;
     top: -9rem;
   }
   .faixa{
-    top: -18rem;
+    top: -24rem;
     left: -13em;
     width: 23.5rem;
     height: 2.3125rem;
@@ -132,19 +135,21 @@ top: 14rem;
     top: 3rem;
   }
   .faixa{
-    top: 9rem;
+    top: 2rem;
     left: -22rem;
     width: 23.6rem;
   }
   .credito{
     left: 25rem;
     top: -32rem;
+    padding: 0.5rem 0;
   }
 }
 
 @media screen and (min-width: 940px) {
   .introducao{
     margin-top: 100px;
+    height: 100%;
   }
   .container__imagens{
     margin-left: 122px;
@@ -185,7 +190,7 @@ top: 14rem;
   top: 11rem;
  }
   .credito{
-    top: -39.5rem;
-    left: 40rem;;
+    top: -36.5rem;
+    left: 40rem;
   }
 }
