@@ -1,0 +1,30 @@
+
+/*
+breakpoint-landscape: 576px;
+breakpoint-tablet: 720px;  
+breakpoint-desktop: 940px;
+*/
+
+
+:root{
+  --font-title: "Fjalla One", serif;
+  --font-text: "Open Sans", serif;
+  --cor1: #2a304d;
+  --cor2: #ffd900;
+  --cor3: #c0ccc1;
+  --cor4: #a1bb7d;
+  --cor5: #b8c1cc;
+  --corBranco:#ffffff;
+
+
+
+}
+
+body{
+  box-sizing: border-box;
+  font-family: var(--font-text);
+  font-size: 1rem;
+  font-weight: 100;
+
+
+}

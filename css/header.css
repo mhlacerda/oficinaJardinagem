@@ -1,0 +1,125 @@
+/* Tamanho celular*/
+
+.cabecalho{
+  background-color: var(--cor1);
+  display: flex;
+  flex-direction: column;
+  height: 9.312rem;
+  width: 100%;
+}
+.cabecalho__menu{
+  z-index: 8;
+}
+.logo{
+  font-family: var(--font-title);
+  font-size: 2.875rem;
+  color: var(--cor2);
+  font-weight: normal;
+  margin: 1rem auto 5rem auto;
+  text-align: center;
+  cursor: pointer;
+}
+.linha{
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+  top: -0.5rem;
+  z-index: 1;
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+  height: 1.8rem;
+  z-index: 8;
+}
+.menu__texto{
+  color: var(--corBranco);
+  text-decoration: none;
+}
+.menu__conteudo{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+  font-size: 1.125rem;
+  background-color: var(--cor1);
+  padding: 1rem;
+  margin-top: -5rem;
+}
+.escondido, .escondido_menu{
+  display: none;
+}
+
+/*Tamanho landscape*/
+@media screen and (min-width: 576px){
+  .cabecalho{
+    height: 10rem;
+  }
+  .logo{
+    margin: 4.062rem auto 2.5rem 1.125rem;
+    text-align: initial;
+  }
+  .menu__conteudo{
+    margin-top: -2rem;
+  }
+}
+
+/*Tamanho tablet*/
+@media screen and (min-width: 720px){
+  .cabecalho{
+    height: auto;
+  }
+  .logo{
+    margin: 5rem auto 2.5rem 8rem;
+    text-align: initial;
+  }
+  .menu__conteudo{
+    margin-top: -1.5rem;
+  }
+  .linha{
+    height: 0.5rem;
+    top: -0.8rem;
+  }
+}
+
+/* Tamanho laptop e desktop*/
+@media screen and (min-width: 940px) {
+  
+  .logo-img{
+    width: 3rem;
+    border-radius: 50%;
+  }
+  .cabecalho{
+    justify-content: space-between;
+    height: auto;
+  }
+  .cabecalho__menu{
+    display: flex;
+    align-items: center;
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+    margin: 4.75rem auto 1.43rem 4.4rem  ;
+    text-align: initial;
+    cursor:default;
+  }
+  .fa-seedling{
+    color: var(--corBranco);
+    font-size: 1.56rem;
+    margin: 4.75rem 3.125rem 1.43rem auto;
+    cursor: pointer;
+  }
+  .menu{
+    display: flex;
+    flex-direction: column;
+  }
+  .menu__conteudo{
+    margin-top: 0rem;
+    padding-right: 3rem;
+  }
+  .linha{
+    top: -0.5rem;
+  }
+  .escondido{
+    display: flex;
+  }
+}
