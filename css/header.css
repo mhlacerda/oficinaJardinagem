@@ -4,18 +4,17 @@
   background-color: var(--cor1);
   display: flex;
   flex-direction: column;
-  height: 9.312rem;
   width: 100%;
 }
 .cabecalho__menu{
-  z-index: 8;
+  z-index: 2;
 }
 .logo{
   font-family: var(--font-title);
   font-size: 2.875rem;
   color: var(--cor2);
   font-weight: normal;
-  margin: 1rem auto 5rem auto;
+  margin: 1.5rem auto 3rem auto;
   text-align: center;
   cursor: pointer;
 }
@@ -23,12 +22,32 @@
   width: 100%;
   background-color: transparent;
   position: relative;
-  top: -0.5rem;
+  top: -0.3rem;
   z-index: 1;
   border-top: 1px solid #D9D9D9;
   border-bottom: 1px solid #D9D9D9;
-  height: 1.8rem;
-  z-index: 8;
+  height: 0.1rem;
+
+}
+.fa-seedling{
+  color: var(--corBranco);
+  font-size: 1.56rem;
+  cursor: pointer;
+}
+.menu{
+  position: fixed;
+  top: 0;
+  left: -250px; /* esconde fora da tela */
+  width: 250px;
+  height: 100vh;
+  background-color: rgb(42, 48, 77, 0.8);
+  box-shadow: 2px 0 5px rgba(42, 48, 77, 0.3);
+  transition: left 0.3s ease-in-out;
+  z-index: 10;
+
+}
+.menu.ativo {
+  left: 0;
 }
 .menu__texto{
   color: var(--corBranco);
@@ -40,43 +59,54 @@
   flex-direction: column;
   line-height: 2rem;
   font-size: 1.125rem;
-  background-color: var(--cor1);
-  padding: 1rem;
-  margin-top: -5rem;
+  padding: 2rem;
+ 
 }
-.escondido, .escondido_menu{
+.escondido{
   display: none;
 }
+.menu-flutuante{
+  color: var(--corBranco);
+  font-size: 2rem;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
+.cor_botao{
+  width: 3rem;
+  height: 3rem;
+  background-color: rgb(42, 48, 77, 0.6);
+  box-shadow: 0px 0px 8px rgba(42, 48, 77, 0.8);
+  border-radius: 100%;
+  position: fixed;
+  bottom: 3rem;
+  right: 1.8rem;
+  z-index: 100;
+}
+.icone__menu{
+  color: var(--corBranco);
+  font-size: 1.56rem;
+  /* margin: 4.75rem 3.125rem 1.43rem auto; */
+  cursor: pointer;
+}
 /*Tamanho landscape*/
-@media screen and (min-width: 576px){
-  .cabecalho{
-    height: 10rem;
-  }
+@media screen and (min-width: 540px){
   .logo{
-    margin: 4.062rem auto 2.5rem 1.125rem;
-    text-align: initial;
-  }
-  .menu__conteudo{
-    margin-top: -2rem;
+    text-align: left;
+    margin: 4.062rem 0 0.5rem 3.125rem;
   }
 }
+
 
 /*Tamanho tablet*/
 @media screen and (min-width: 720px){
-  .cabecalho{
-    height: auto;
-  }
+
   .logo{
-    margin: 5rem auto 2.5rem 8rem;
-    text-align: initial;
-  }
-  .menu__conteudo{
-    margin-top: -1.5rem;
-  }
-  .linha{
-    height: 0.5rem;
-    top: -0.8rem;
+    text-align: left;
+    margin: 2rem 0 2rem 3.125rem;
   }
 }
 
@@ -87,37 +117,19 @@
     width: 3rem;
     border-radius: 50%;
   }
-  .cabecalho{
-    justify-content: space-between;
-    height: auto;
-  }
   .cabecalho__menu{
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   .logo{
     display: flex;
     align-items: center;
-    margin: 4.75rem auto 1.43rem 4.4rem  ;
-    text-align: initial;
     cursor:default;
+    margin-left: 10rem;
   }
-  .fa-seedling{
-    color: var(--corBranco);
-    font-size: 1.56rem;
-    margin: 4.75rem 3.125rem 1.43rem auto;
-    cursor: pointer;
-  }
-  .menu{
-    display: flex;
-    flex-direction: column;
-  }
-  .menu__conteudo{
-    margin-top: 0rem;
-    padding-right: 3rem;
-  }
-  .linha{
-    top: -0.5rem;
+  .icone__menu{
+    margin-right: 10rem;
   }
   .escondido{
     display: flex;
