@@ -43,7 +43,7 @@
   background-color: rgb(42, 48, 77, 0.8);
   box-shadow: 2px 0 5px rgba(42, 48, 77, 0.3);
   transition: left 0.3s ease-in-out;
-  z-index: 10;
+  z-index: 100;
 
 }
 .menu.ativo {
