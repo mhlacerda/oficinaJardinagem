@@ -1,10 +1,10 @@
 .introducao{
-  margin-top: 3.5625rem;
+  margin-top: 3rem;
 }
 .grid__container{
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-auto-rows: 1fr;
+  grid-auto-rows: auto;
 
 }
 .imagem__fundo, .imagem__intro{
@@ -28,17 +28,17 @@
   height: 1.3125rem;
   position: relative;
   z-index: 3;
-  grid-area: 8 / 2 / 9 / 7;
+  grid-area: 7 / 2 / 8 / 7;
 }
 .texto__container{
   background-color: var(--back-texto);
-  grid-area: 8 / 2 / 23 / 8;
+  grid-area: 8 / 2 / 20 / 8;
 }
 .introducao__texto__container{
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  padding: 12rem 1.18rem 0rem 1.18rem;
+  padding: 10rem 1.18rem 5rem 1.18rem;
  
 }
 .introducao__texto__title{
@@ -67,52 +67,67 @@
   background-color: var(--cor2);
   width: 9.25rem;
   height: 2.312rem;
- 
+  
 }
 .faixa{
 background-image: url("../img/faixa.png");
 background-position: right;
 height: 2.25rem;
 width: 100%;
-grid-area: 22 / 2 / 23 / 8;
+grid-area: 19 / 2 / 20 / 8;
+margin-top: 1rem;
 
 }
 .credito{
   margin-top: 1rem;
-  grid-area: 23 / 2 / 24 / 8;
+  grid-area: 35 / 2 / 36 / 8;
 }
 
+@media screen and (min-width: 450px){
+  .introducao__texto__container{
+    padding-top: 12rem;
+  }
+}
 @media screen and (min-width: 540px) {
   .introducao{
-    margin-top: 1.18rem;
+    margin-top: 5rem;
   }
   .imagem__fundo{
+    height: 95%;
     grid-area: 3 / 2 / 9 / 7;
   }
   .imagem__intro{
     width: 90%;
     height: 100%;
-    grid-area: 2 / 3 / 9 / 8;
+    grid-area: 2 / 3 / 8 / 8;
   } 
   .faixa{
     width: 90%;
-    margin-top: 1rem;
-    grid-area: 9 / 2 / 11 / 7;
+    margin-top: 0rem;
+    grid-area: 9 / 2 / 10 / 7;
+    background-image: url("../img/faixa.png");
+  background-position: bottom;
+   
   }
   .retangulo-amarelo{
     grid-area: 7 / 2 / 8 / 7;
   }
   .texto__container{
     width: 90%;
-    
     grid-area: 7 / 4  / 16 / 9 ;
   }
   .introducao__texto__container{
-    padding-top: 15rem;
+    padding: 12rem 1.9rem 2rem 1.9rem;
+   
   }
+
   .credito{
     grid-area: 16 / 4 / 17 / 8;
   }
 
 }
 
+/*Tamanho tablet*/
+@media screen and (min-width: 720px){
+
+}
